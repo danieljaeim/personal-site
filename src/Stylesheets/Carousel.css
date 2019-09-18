@@ -1,0 +1,79 @@
+.quote-banner {
+  width: 50%; 
+  height: 220px;
+  left: 25%; 
+  right: 25%;  
+  color: black; 
+  font-family: 'Indie Flower', cursive;
+  border-radius: 10px; 
+  position: relative; 
+}
+
+.quote-banner img {
+  width: 100%; 
+}
+
+.quote-banner:before {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0.5; 
+  overflow: hidden; 
+}
+
+.quote-banner .caption {
+  position: absolute; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.quote-banner h3 {
+  letter-spacing: 0.5px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+.logo {
+  position: relative; 
+  left: 46%; 
+  right: 54%;    
+  height: 50px; 
+  width: 70px; 
+  padding: 5px; 
+  opacity: 0.8; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-image: url('../img/logo.png');
+}
+
+.Typist {
+  position: relative; 
+  display: inline-block; 
+  animation: text-decorate 8s linear infinite alternate; 
+}
+
+@keyframes text-decorate {
+  0% {
+    text-decoration: underline mediumaquamarine;
+  }
+
+  33% {
+    text-decorate: underline pink; 
+  }
+
+  66% {
+    text-decorate: underline mediumseagreen; 
+  }
+
+  100% {
+    text-decoration: underline mediumturquoise; 
+  }
+}
